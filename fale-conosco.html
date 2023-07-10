@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/logoHeader.png"type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      
+        <div class="contato">
+            <div class="span-header">
+                <span> <i class="bi bi-envelope"></i> reforco.escolar.mcs@gmail.com</span>
+                <span> <i class="bi bi-telephone"></i> <a href="https://api.whatsapp.com/send?phone=6198404581&text=Fale%20com%20o%20MCS%20Refor%C3%A7o%20Escolar%20e%20tire%20todas%20as%20suas%20duvidas">(61)99840-4581</a> </span>
+                
+            </div>
+
+            <div>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-apple"></i>
+                <i class="bi bi-google"></i>
+            </div>
+        </div>
+
+        <div class="nav">
+            
+            <div class="menu-sanduiche">
+                <ion-icon name="menu"></ion-icon>
+              </div>
+              
+            <div class="imgHeader">
+              <a href="index.html"> <img src="img/logoHeader.png" alt=""> </a>
+            </div>
+            
+            <nav>
+                <ul class="ulHeader">
+                    <li class="liHeader"> <a href="index.html"> Início </a></li>
+                    <li class="liHeader"> <a href="#sobre-nos"> Sobre nos </a></li>
+                    <li class="liHeader"> <a href="#segmento"> Segmento </a></li>
+                    <li class="liHeader"> <a href="#eventos"> Eventos </a></li>
+                    <li class="liHeader"> <a href="fale-conosco.html"> Fale Conosco </a></li>
+                </ul>
+            </nav>
+
+            <div class="matricula-login">
+              <a href="matricula.html"> Matricule-se </a>
+              <button id="abrir-modal"> Login </button>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="mt-3 container mb-5 formulario" >
+
+        <div class="modal-login">
+            <div id="fade-login" class="hide-login"></div>
+            <div id="modal-login" class="hide-login">
+                <h1>Faça login</h1>
+                <div>
+                    <input type="email" name="" id="nome" class="input" placeholder="Email Aluno">
+                    <!-- <label for="" class="labelInput">Nome completo</label> -->
+            
+                </div>
+                <div>
+                    <input type="password" name="" id="" class="input" placeholder="Senha">
+                    <!-- <label for="" class="labelInput">Nome completo</label> -->
+                </div>
+                <div>
+                    <button id="entrar"> Entrar </button>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="h3faleconosco">Fale conosco</h3>
+        <form action="" method="" class="row g-3">
+            <div class="col-8">
+                <label for="nome1" class="form-label"> Seu nome (obrigatorio) </label>
+                <input type="text" name="" id="nome-fale-conosco" class="form-control">
+            </div>
+
+            <div class="col-8">
+                <label for="email" class="form-label"> Seu email (obrigatorio) </label>
+                <input type="text" name="" id="email-fale-conosco" class="form-control">
+            </div>
+
+            <div class="col-8">
+                <label for="assunto" class="form-label"> Assunto </label>
+                <input type="text" name="" id="assunto-fale-conosco" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <label for="mensagem" class="form-label"> Sua mensagem </label>
+                <input type="text" name="" id="mensagem-fale-conosco" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn btn-outline-danger  me-2" onclick="confirmarFaleConosco()"> <a href="index.html" class="link-faleconosco" >Enviar</a> </button>
+            </div>
+        </form>
+        
+        
+    </main>
+
+    <footer>
+        <section id="footer">
+          <div class="contatos-footer">
+            <h1>Contatos</h1>
+  
+            <div class="informacoes-maps">
+                <ion-icon name="location"></ion-icon>
+                <p>QR 406 conjunto 8 casa 25</p>
+            </div>
+  
+            <div class="informacoes-maps">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <p><a href="https://api.whatsapp.com/send?phone=6198404581&text=Fale%20com%20o%20MCS%20Refor%C3%A7o%20Escolar%20e%20tire%20todas%20as%20suas%20duvidas">(61)99840-4581</a></p>
+            </div>
+  
+            <div class="informacoes-maps">
+              <ion-icon name="mail-outline"></ion-icon>
+                <p>reforco.escolar.mcs@gmail.com</p>
+            </div>
+              <button>Agende uma consulta <ion-icon name="logo-whatsapp"></ion-icon> </button>
+  
+          </div>
+          
+          <div class="ancora">
+            <a href="index.html">
+                <img src="img/logoHeader.png" alt="">
+            </a>
+            <div class="icones-footer">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-apple"></i>
+                <i class="bi bi-google"></i>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
